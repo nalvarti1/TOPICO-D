@@ -1,0 +1,74 @@
+INFORMACION DEL CURSO
+=======================
+
+- Nombre estudiante: Nicolas Alvarez
+- Asignatura: Topico D
+- Profesor: Carlos Arias
+
+ESTRUCTURA DEL PROYECTO
+=======================
+
+Este proyecto contiene los ejercicios 6 al 10 del curso, implementados sobre el
+dataset NSL-KDD para deteccion de intrusiones de red.
+
+
+CARPETAS
+--------
+
+documentacion/
+    Notebooks originales de referencia del curso, en formato ARFF (Google Colab).
+    No modificar.
+
+NSL_KDD-master/
+    Archivos de datos del dataset NSL-KDD:
+      - KDDTrain+.csv / KDDTrain+.txt  -> conjunto de entrenamiento
+      - KDDTest+.csv  / KDDTest+.txt   -> conjunto de pruebas
+
+codigo/
+    Notebooks con el codigo limpio, sin outputs ejecutados.
+    Usar estos archivos para revisar o reutilizar el codigo.
+
+resultados/
+    Notebooks ejecutados, con todas las salidas visibles:
+    graficas, tablas, metricas y resultados de los algoritmos.
+    Usar estos archivos para ver los resultados de cada ejercicio.
+
+.ipynb_checkpoints/
+    Carpeta generada automaticamente por Jupyter al guardar un notebook.
+    Contiene copias de respaldo del ultimo estado guardado de cada archivo.
+    No es necesario modificarla ni eliminarla.
+
+
+NOTEBOOKS INCLUIDOS (ejercicios 6 al 10)
+-----------------------------------------
+
+6_Visualizacion_del_conjunto_de_datos_csv.ipynb
+    Exploracion visual del dataset: histogramas, distribuciones,
+    matriz de correlacion y scatter matrix.
+
+7_Division_del_conjunto_de_datos_csv.ipynb
+    Division del dataset en subconjuntos de entrenamiento, validacion
+    y pruebas. Particionado aleatorio y estratificado (stratified sampling).
+
+8_Preparacion_del_conjunto_de_datos_csv.ipynb
+    Preparacion de datos: manejo de valores nulos, codificacion de
+    variables categoricas (OrdinalEncoder, OneHotEncoder, get_dummies)
+    y escalado con RobustScaler.
+
+9_Creacion_de_Transformadores_y_Pipelines.ipynb        (version TXT)
+9_Creacion_de_Transformadores_y_Pipelines_csv.ipynb    (version CSV)
+    Construccion de transformadores personalizados (DeleteNanRows,
+    CustomScaler, CustomOneHotEncoding) y pipelines con ColumnTransformer.
+
+10_Evaluacion_de_resultados.ipynb
+    Entrenamiento de Regresion Logistica y evaluacion del modelo:
+    matriz de confusion, precision, recall, F1 score, curva ROC y curva PR.
+
+
+COMO EJECUTAR
+-------------
+
+1. Abrir una terminal en la carpeta raiz del proyecto (EjercicioNotebook/).
+2. Ejecutar: python -m notebook
+3. Abrir cualquier notebook desde las carpetas codigo/ o resultados/.
+4. Los archivos de datos se leen automaticamente desde NSL_KDD-master/.
